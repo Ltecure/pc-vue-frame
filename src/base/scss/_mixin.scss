@@ -1,0 +1,72 @@
+@mixin placeholder-color($color: #ccc) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin ellipsis($width: 100%) {
+  width: $width;
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: keep-all;
+  text-overflow: ellipsis;
+}
+
+@mixin multi-ellipsis($line-number: 2) {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line-number;
+}
+
+// flex center
+@mixin center-flex($direction: both) {
+  display: flex;
+  @if $direction==both {
+    justify-content: center;
+    align-items: center;
+  } @else if $direction==x {
+    justify-content: center;
+  } @else if $direction==y {
+    align-items: center;
+  }
+}
+
+//定位上下左右居中
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//定位上下居中
+@mixin ct {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+//定位水平居中
+@mixin cl {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+//公共模块投影
+@mixin box-shadow($color: rgba(88, 92, 101, 0.06)) {
+  box-shadow: 0 6px 24px 0 $color;
+  border-radius: 4px;
+  background-color: #fff;
+}

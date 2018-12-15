@@ -1,0 +1,10 @@
+@import "./_sprite.scss";
+.icon {
+    display: inline-block;
+}
+.icon-vue{
+    @include sprite($icon-vue);
+}
+.icon-close{
+  @include sprite($icon-close);
+}

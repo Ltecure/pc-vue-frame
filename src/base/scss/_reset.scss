@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &::before,
+  &::after {
+      box-sizing: inherit;
+  }
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a,img {
+  border: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+i {
+  font-style: normal;
+}

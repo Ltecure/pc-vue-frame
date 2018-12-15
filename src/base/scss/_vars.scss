@@ -1,0 +1,31 @@
+// 主色
+$color-primary: #ec4280; // 整站主色
+$bg-primary: #e6e9f2; // 主色，容器背景颜色
+
+// 文字
+$font-color: #585c65 !default; // 文字主色
+$font-color-lighter: #9b9b9b !default; // 文字浅色
+$font-color-lightest: #333 !default; // 文字突出
+$font-size: 16px;
+
+// 边框
+$border-color: #e7e7e7;
+$border-color-lighter: #ccc;
+
+// 投影色
+$box-shadow-color: #585c65;
+
+// z-index
+$mask-background: rgba(0, 0, 0, .4);
+$mask-z-index: 1000;
+$modal-z-index: 1010;
+
+// margin\padding
+$margin-normal: 12px;
+$margin-middle: 15px;
+$margin-large: 18px;
+$margin-out: 20px;
+$padding-in: 20px;
+
+// 圆角
+$border-radius: 4px;
