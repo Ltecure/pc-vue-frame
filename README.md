@@ -1,6 +1,8 @@
 # vue-pc-frame
 
 > vue-pc-frame
+> Vue@2.5 + Webpack@3.6 + vuex + axios + scss + spritesImage
+> 一套 PC 端通用脚手架
 
 ## Build Setup
 
