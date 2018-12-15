@@ -1,18 +1,18 @@
 <template>
-  <transition name="vip-message-fade">
+  <transition name="cm-message-fade">
     <div :class="[
-            'vip-message-tips',
-            `vip-message--${type}`
+            'cm-message-tips',
+            `cm-message--${type}`
             ]" v-show="visible"
           @mouseenter="clearTimer"
           @mouseleave="startTimer">
       <i :class="[
-            'vip-message-status',
+            'cm-message-status',
             `icon-status--${type}`
             ]">
       </i>
       <p>{{ message }}</p>
-      <i class="vip-message-closeBtn" v-if="showCloseBtn" @click="close"></i>
+      <i class="cm-message-closeBtn" v-if="showCloseBtn" @click="close"></i>
     </div>
   </transition>
 </template>
@@ -73,7 +73,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .vip-message-tips {
+  .cm-message-tips {
     min-width: 380px;
     box-sizing: border-box;
     border-radius: 4px;
@@ -90,23 +90,23 @@ export default {
     z-index: 999;
     font-size: 14px;
   }
-  .vip-message--success {
+  .cm-message--success {
     box-shadow: 0 1px 6px rgba(0,0,0,.2);
     background-color: white;
     border: none;
     color: #ec4280;
   }
-  .vip-message--warning {
+  .cm-message--warning {
     background-color: #fdf6ec;
     border: 1px solid #faecd8;
     color: #e6a23c;
   }
-  .vip-message--error {
+  .cm-message--error {
     background-color: #fef0f0;
     border: 1px solid #fde2e2;
     color: #f56c6c;
   }
-  .vip-message-status {
+  .cm-message-status {
     margin-right: 10px;
     width: 16px;
     height: 16px;
@@ -142,7 +142,7 @@ export default {
       color: white;
     }
   }
-  .vip-message-closeBtn {
+  .cm-message-closeBtn {
     position: absolute;
     top: 50%;
     right: 15px;
@@ -154,7 +154,7 @@ export default {
       content: '\2715';
     }
   }
-  .vip-message-fade-enter,.vip-message-fade-leave-active{
+  .cm-message-fade-enter,.cm-message-fade-leave-active{
     opacity: 0;
     -webkit-transform: translate(-50%,-100%);
     transform: translate(-50%,-100%)

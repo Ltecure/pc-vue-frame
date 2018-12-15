@@ -1,5 +1,5 @@
 <template>
-  <div class="vip-circle-dialog" v-show="visible" ref="dialog">
+  <div class="cm-circle-dialog" v-show="visible" ref="dialog">
     <!-- <div class="dialog-mask" @click.stop="$emit('update:visible', false)"></div> -->
     <div class="dialog-mask"></div>
     <div class="dialog-content" :style="`width: ${contentWidth}px;`">
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .vip-circle-dialog {
+  .cm-circle-dialog {
     width: 100vw;
     height: 100vh;
     position: fixed;
